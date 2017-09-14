@@ -29,7 +29,7 @@ bws.on('open', () => {
 
 bws.on('ticker', (pair, ticker) => {
     sails.sockets.blast('Bitfinex BTCUSD Ticker Update', ticker);
-    console.log('Ticker:', ticker)
+    //console.log('Ticker:', ticker)
 })
 
 bws.on('error', console.error)
